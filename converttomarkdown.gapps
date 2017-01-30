@@ -281,7 +281,7 @@ function processTextElement(inSrc, txt) {
       }
       pOut=pOut.substring(0, off)+d1+pOut.substring(off, lastOff)+d2+pOut.substring(lastOff);
     } else if (txt.isItalic(off)) {
-      pOut=pOut.substring(0, off)+'*'+pOut.substring(off, lastOff)+'*'+pOut.substring(lastOff);
+      pOut=pOut.substring(0, off)+'_'+pOut.substring(off, lastOff)+'_'+pOut.substring(lastOff);
     }
     lastOff=off;
   }
